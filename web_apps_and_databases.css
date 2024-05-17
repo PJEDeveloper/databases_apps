@@ -1,0 +1,74 @@
+/*HTML and body element style objects*/
+html, body {
+    height: 100%; /*100% height to ensure html and body elements take up full height of the viewport*/
+    position: relative; /*Positions the html and body elements relatively to their normal positions*/
+    margin: 0; /*Zero margin for html and body element*/
+    padding: 0; /*Zero padding for html and body element*/
+}
+/*Body element style object*/
+body{
+    position: relative; /*Body to positioned relatively to its normal position*/
+}
+/*Pseudo-Body element used to be inserted before the content of the body element*/
+body::before{
+    /*Initial content is a blank string*/
+    content:'';
+    position: fixed; /* Fixed to ensure the background stays fixed during scrolling */
+    top: 0; /*Zero top to position top edge of the pseudo-body element at the top edge of viewport*/
+    left: 0; /*Zero left to position left edge of the pseudo-body element at the left edge of viewport*/
+    width: 100%; /*100% width and height to set pseudo-body element to cover entire viewport*/
+    height: 100%;
+    background-image: url('background_image.jpg'); /*Set background image for pseudo-body element*/
+    background-size: cover; /*Ensure background image covers the entire pseudo-body element*/
+    background-repeat: no-repeat; /*Prevent the background of the pseudo-body element from repeating*/
+    background-attachment: fixed; /*Fixed background image in place so it doesn't scoll with content*/
+    opacity: 0.35; /*Set opacity of background image to make it semi-transparent*/
+    z-index: -1; /* Ensure the pseudo-body element stays behind the content of the body element*/
+}
+/*Header style object*/
+header{
+    text-align: center; /*Center text horizontally*/
+    font-size: 2em; /*Set the font size to twice the size of the default font size*/
+    color: white; /*Set text color to white*/
+    position: relative; /*Positions the header element relative to its normal position*/
+    margin-top: 10vh; /*Add a top margin equivalent to 10% of the viewport height*/
+}
+/*.responsive-img style object*/
+.responsive-img{ /*Class selector for responsive images*/
+    max-width: 100%; /*Ensures the image width doesn't exceed the width of its container*/
+    height: auto; /*Maintain aspect ratio of images*/
+    display: block; /*Displays the image as a block-level element*/
+    margin: 20px auto; /*Center */
+    max-height: 300px; /*Maxium heigh of images to control their size*/
+}
+/*Navigation style object*/
+nav {
+    background-color: #333; /*Dark gray background color for navigation element */
+    overflow: hidden; /*Ensure content does not overflow the other container*/
+    position: fixed; /*Fix navigation bar to top of the viewport*/
+    width: 100%; /*Sets width of the navigation bar to 100% of the viewport width*/
+    top: 0; /*Position the navigation bar at top of the viewport*/
+    z-index: 1000; /*Place navigation bar above other elements*/
+}
+/*Navigation Unorder List style object*/
+nav ul {
+    list-style-type: none; /*Remove any default list styling*/
+    margin: 0; /*Remove default margins*/
+    padding: 0; /*Remove default padding*/
+    display: flex; /*Display the list items in a flex container*/
+    justify-content: center; /*Center the list items horizontally*/
+}
+/*Navigation Unordered List List item style object*/
+nav ul li {
+    padding: 14px 20px; /*Add padding around each list item*/
+}
+/*Navigation Unordered List List item anchor element style object*/
+nav ul li a {
+    color: white; /*Set color to white*/
+    text-decoration: none; /*Remove default underline from the links*/
+    display: block; /*Displays the links as block-level elements*/
+}
+/*Style objects for the anchor elements when they are hovered over*/
+nav ul li a:hover, nav ul li a.active{
+    background-color: #575757; /*Set background color to lighter gray when hovered over*/
+}
