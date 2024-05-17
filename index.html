@@ -1,0 +1,284 @@
+<!--The document type declaration for HTML5 type browser-->
+<!DOCTYPE html>
+<!--root html tag with lang attribute set to English-->
+<html lang="en">
+<!--Head tag containing metadata to include the title, a links to CSS and a script-->
+<head>
+    <!--Meta tag with charset attribute set to UTF-8-->
+    <meta charset="UTF-8">
+    <!--Meta tag with instructions to browser on how to control the page's dimensions and scaling
+    to ensure responsiveness on different devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of HTML document to be displayed in browser's title-->
+    <title>Introduction to Web Applications</title>
+    <!--Link tag with href attribute to external Web Apps and Databases.css file rel type set to stylesheet-->
+    <link href="web_apps_and_databases.css" rel="stylesheet">
+    <!--Scirpt tag with source attribute to external Web Apps and Databases.js file-->
+    <script src="web_apps_and_databases.js"></script>
+</head>
+<!--Body tag to contain main content of HTML document that is display in the web browser-->
+<body>
+    <!--Nav tag to set up dynamic scrollbar-->
+    <nav>
+        <!--Unordered list tag to contain navigation links-->
+        <ul>
+            <!--List tag with anchor tag with hyperlink to the Introdution section of the HTML document-->
+            <li>
+                <a href="#intro">Introduction</a>
+            </li>
+            <!--List tag with anchor tag with hyperlink to the Key Concepts section of the HTML document-->
+            <li>
+                <a href="#concepts">Key Concepts</a>
+            </li>
+            <!--List tag with anchor tag with hyperlink to the Interaction with Databases section of the HTML document-->
+            <li>
+                <a href="#interaction">Interaction with Databases</a>
+            </li>
+            <!--List tag with anchor tag with hyperlink to the Security section of the HTML document-->
+            <li>
+                <a href="#security">Security</a>
+            </li>
+            <!--List tag with anchor tag with hyperlink to the Use Cases section of the HTML document-->
+            <li>
+                <a href="#usecases">Use Cases</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Section tag with id attribute set to intro used for structuring and identifying the Introdution part of the HTML document-->
+    <section id="intro">
+    <!--Header section of Introduction-->
+    <header>
+        <!--Strong tags used to enbolden text-->
+        <strong>Introduction to Web Applications</strong>
+    </header>
+    <!--Paragraph element with web application explanation wtih em tags for emphasis-->
+    <p>Web applications are software programs that run on web servers and 
+        are accessed by users through web browsers over the internet. They 
+        range from simple static websites to complex platforms like social networks 
+        and e-commerce sites. Unlike traditional desktop applications, web applications 
+        can be accessed from any device with an internet connection, offering <em>flexibility</em> and 
+        <em>ease of use</em>.
+    </p>
+    <!--Image tage with source attribute set to webapplication.jpeg, alt text if image cannot be displayed and class attribute assigning CSS class styling to responsive image-->
+    <img src="webapplications.jpeg" alt="Web Applications" class="responsive-img">
+    </section>
+    <!--Section tag with id attribute set to concepts used for structuring and identifying the Key Concepts part of the HTML document-->
+    <section id="concepts">
+    <!--Level 2 heading tage for Key Concepts section-->
+    <h2>Key Concepts</h2>
+    <!--Unordered list of key concepts related to web applications-->
+    <ul>
+        <!--List item describing client-server architecture, with use of bold tags-->
+        <li><b>Client-Server Architecture:</b> The backbone of web applications, where the client (front end)
+             interacts with the server (back end) to perform tasks.
+        </li>
+        <!--List item describing front-end technologies, with use of bold tags-->
+        <li>
+            <b>Front-End Technologies:</b> HTML, CSS, and JavaScript are used to create the user interface
+            and ensure a responsive and interactive user experience.
+        </li>
+        <!--List item describing back-end technologies, with use of bold tags-->
+        <li>
+            <b>Back-End Technologies:</b> Programming languages like Python, JavaScript, Ruby, and Java,
+            along with web servers like Apache and Nginx, handle the application's logic and data processing.
+        </li>
+    </ul>
+    </section>
+    <!--Section tag with id attribute set to interaction used for structuring and identifying the interaction with databases part of the HTML document-->
+    <section id="interaction">
+    <!--Level 2 heading tag for How Web Applications Interact with Back-End Databases section-->
+    <h2>How Web Applications Interact with Back-End Databases</h2>
+    <!--Paragrapgh element describing importance of interation between web applications and databases-->
+    <p>
+        The interaction between web applications and back-end databases is a crucial component of modern web development.         
+    </p>
+    <!--Level 3 heading for Here's how it works section-->
+    <h3>Here’s how it works:</h3>
+    <!--Unordered list explaining the steps of interaction-->
+    <ul>
+        <!--Level 3 heading tag for User Request section-->
+        <h3>User Request</h3>
+        <!--List item describing the user request step-->
+        <li>
+            The process begins when a user interacts with the front end by submitting a form or clicking a link, which sends
+            an HTTP request to the server.
+        </li>
+        <!--Level 3 heading tag for Server Handling section-->
+        <h3>Server Handling</h3>
+        <!--List item describing the server handling step-->
+        <li>
+            The web server receives the HTTP request and routes it to the appropriate back-end logic. This is often managed
+            by a framework that handles routing, middleware, and controllers.
+        </li>
+        <!--Lever 3 heading for Database Query section-->
+        <h3>Database Query</h3>
+        <!--List item describing the database query step-->
+        <li>
+            The back end executes the business logic, which usually involves querying a database. This interaction includes:
+        </li>
+        <!--Nested unordered list describing different types of database queries-->
+        <ul>
+            <!--List item describing data retrieval, with underlined text for emphasis-->
+            <li>
+                <u>Retrieving Data:</u> Running SQL queries to fetch data from the database.
+            </li>
+            <!--List item describiing data insertion/updating, with underlined text for emphasis-->
+            <li>
+                <u>Inserting/Updating Data:</u> Modifying the database based on user input or application logic.
+            </li>
+            <!--List item describing data deletion, with underlined text for emphasis-->
+            <li>
+                <u>Deleting Data:</u> Removing entries from the database.
+            </li>
+            <!--Nested unordered list explaining ORM tools-->
+            <ul>
+                <!--List item describing ORM tools, with emphasized and bolded text for emphasis-->
+                <li>
+                    <em>Object-Relational Mapping</em> <b>(ORM)</b> tools are often used to simplify these interactions, allowing developers to interact
+                    with the database using the programming language's syntax rather than writing raw SQL queries.
+                </li>
+            </ul>
+        </ul>
+    </ul>
+    <!--Level 2 heading for Response Formation section-->
+    <h2>Response Formation</h2>
+    <!--Unordered list describing response formation-->
+    <ul>
+        <!--List item describing response formation-->
+        <li>After processing the request and querying the database, the back end forms an HTTP response, which includes
+        the data or the result of the operation.
+        </li>
+    </ul>
+    <!--Level 2 heading for Sending Reponse section-->
+    <h2>Sending Response</h2>
+    <!--Unordered list describing how the response is sent-->
+    <ul>
+        <!--Level 4 heading introducing the types of responses-->
+        <h4>
+            The server sends the HTTP response back to the client. This can be:
+        </h4>
+        <!--List item describing HTML/CSS/JavaScript responses, with underlined text for emphasis-->
+        <li>
+            <u>HTML/CSS/JavaScript:</u> For rendering updated content in the browser.
+        </li>
+        <!--List item describing JSON/XML responses, with underlined text for emphasis-->
+        <li>
+            <u>JSON/XML:</u> For dynamic data to be processed by the client-side code, often in single-page applications (SPAs).
+        </li>
+    </ul>
+    <!--Level 2 heading for APIs (Application Programming Interfaces) section-->
+    <h2> APIs (Application Programming Interfaces)</h2>
+    <!--Unordered list describing APIs-->
+    <ul>
+        <!--List item describing APIs and common paradigms-->
+        <li>APIs provide endpoints through which the front end can send requests and receive responses. 
+        RESTful APIs and GraphQL are common paradigms used for designing APIs.
+        </li>
+    </ul>
+    <!--Image tag with source set to api_endpoints.jpeg, alternate text incase image does not load, and class attribute assigning CSS class styling to responsive image-->
+    <img src="api_endpoints.jpeg" alt="API Endpoint" class="responsive-img">
+    </section>
+    <!--Section tag with id attribute set to security used for structuring and identifying the security part of the HTML document-->
+    <section id="security">
+    <!--Level 2 heading for Security section-->
+    <h2>Security</h2>
+    <!--Unordered list describing security practices-->
+        <ul>
+            <!--Level 4 heading introducting the importance of security practices-->
+            <h4>
+                Security practices are paramount, especially concerning database interactions:
+            </h4>
+            <!--List item describing authentication and authorization, with underlined text for emphasis-->
+            <li>
+                <u>Authentication and Authorization:</u> Ensuring users are who they claim to be and have permission to access certain resources.
+            </li>
+            <!--List item describing validation and sanitization, with underlined text for emphasis-->
+            <li>
+                <u>Input Validation and Sanitization:</u> Preventing malicious input that could exploit the system (e.g., SQL injection).
+            </li>
+            <!--List item describing encryption, with underlined text for emphasis-->
+            <li>
+                <u>Encryption:</u> Protecting data in transit and at rest.
+            </li>
+        </ul>
+        <!--Image tag with source set to security.jpeg, alternate text incase image does not load, and class attribute assigning CSS class styling to responsive image-->
+        <img src="security.jpeg" alt="Security Image" class="responsive-img">
+    </section>
+    <!--Section tag with id attribute set to usecases used for structuring and identifying the use cases part of the HTML document-->
+    <section id="usecases">
+    <!--Level 2 heading for Examples of Intranet and Internet Use Cases in Businesses section-->
+    <h2>Examples of Intranet and Internet Use Cases in Businesses</h2>
+    <!--Line break tag for spacing-->
+    <br>
+    <!--Level 3 heading for Intranet Use Cases section-->
+    <h3>Intranet Use Cases</h3>
+    <!--Image tag with source set to intranet_image.jpeg, alternate text incase image does not load, and class attribute assigning CSS class styling to responsive image-->
+    <img src="intranet_image.jpeg" alt="Intranet Image" class="responsive-img">
+        <!--Level 4 heading for Employee Portals section-->
+        <h4>Employee Portals:</h4>
+            <!--Unordered list describing employee portals-->
+            <ul>
+                <!--List item describing the benefits of employee portals-->
+                <li>Intranet applications like employee portals provide centralized access to company resources, HR information, and
+                internal communications. These applications streamline administrative tasks and improve internal communication.
+                </li>
+            </ul>
+        <!--Level 4 heading for Project Management section-->
+        <h4> Project Management Tools:</h4>
+        <!--Unordered list describing project management tools-->
+            <ul>
+                <!--List item describing the benefits of project management tools-->
+                <li>
+                Web applications like Trello or Jira are used within businesses to manage projects, assign tasks, and track progress.
+                These tools enhance collaboration and productivity among team members.
+                </li>
+            </ul>
+        <!--Level 4 heading for Internal Knowledge Bases section-->
+        <h4>Internal Knowledge Bases:</h4>
+            <!--Unordered list describing internal knowledge bases-->
+            <ul>
+                <!--List item describing the benefits of internal knowledge bases-->
+                <li>
+                Companies often use intranet web applications to create knowledge bases, where employees can access training materials,
+                company policies, and best practices. This ensures that valuable information is easily accessible to all employees.
+                </li>
+            </ul>
+    <!--Level 3 heading for Internet Use Cases section-->
+    <h3>Internet Use Cases</h3>
+    <!--Image tag with source set to internet_image.jpeg, alternate text incase image does not load, and class attribute assigning CSS class styling to responsive image-->
+    <img src="internet_image.jpeg" alt="Internet Image" class="responsive-img">
+        <!--Level 4 heading for E-commerce Platforms section-->
+       <h4>E-Commerce Platforms:</h4>
+       <!--Unordered list describing e-commerce platforms-->
+            <ul>
+                <!--List item describing the benefits of e-commerce platforms-->
+                <li>
+                Web applications like Amazon and eBay allow businesses to sell products online, reaching a global audience. 
+                These platforms handle everything from product listings to payment processing and order management.
+                </li> 
+            </ul>
+        <!--Level 4 heading for Social Networks section-->
+        <h4>Social Networks:</h4>
+            <!--Unordered list describing social networks-->
+            <ul>
+                <!--List items describing the benefits of social networks-->
+                <li>
+                Applications like Facebook and LinkedIn connect millions of users worldwide, facilitating communication, networking,
+                and content sharing. Businesses use these platforms for marketing, customer engagement, and brand building.
+                </li>
+            </ul>
+        <!--Level 4 heading for Customer Relationship Management (CRM) Systems section-->
+        <h4>Customer Relationship Management (CRM) Systems:</h4>
+            <!--Unordered list describing CRM systems-->
+            <ul>
+                <!--List item describing the benefits of CRM systems-->
+                <li>
+                Web-based CRM applications like Salesforce enable businesses to manage customer interactions, track sales, and analyze
+                customer data. These systems help improve customer service and drive sales growth.
+                </li>
+            </ul>
+        <!--Line break tag for spacing-->
+        <br>
+    </section>
+</body>
+</html>
